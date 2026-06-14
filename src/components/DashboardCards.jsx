@@ -1,38 +1,40 @@
 function DashboardCards() {
   const cards = [
     {
-      title: "Faculty Members",
-      value: 24,
-      icon: "👨‍🏫"
+      title: "Faculty",
+      value: "120+",
+      icon: "👨‍🏫",
     },
     {
       title: "Subjects",
-      value: 18,
-      icon: "📚"
+      value: "380+",
+      icon: "📚",
     },
     {
-      title: "Classrooms",
-      value: 12,
-      icon: "🏫"
+      title: "Rooms",
+      value: "42",
+      icon: "🏫",
     },
     {
-      title: "Generated Schedules",
-      value: 32,
-      icon: "📅"
-    }
-  ]
+      title: "Timetables",
+      value: "50K+",
+      icon: "📅",
+    },
+  ];
 
   return (
     <div className="cards">
       {cards.map((card, index) => (
         <div className="card" key={index}>
-          <h2>{card.icon}</h2>
+          <div className="card-icon">{card.icon}</div>
+
           <h3>{card.title}</h3>
+
           <p>{card.value}</p>
         </div>
       ))}
     </div>
-  )
+  );
 }
 
-export default DashboardCards
+export default DashboardCards;

@@ -1,25 +1,26 @@
 function Contact() {
   return (
     <div className="page">
-
-      <h1>📞 Contact</h1>
+      <h1>Contact AcademicFlow</h1>
 
       <div className="recommendation-card">
+        <h2>Enterprise Support</h2>
 
-        <p><strong>Project:</strong> University Timetable Generator</p>
-
-        <p><strong>Problem Domain:</strong> Constraint Satisfaction Problem (CSP)</p>
-
-        <p><strong>Course:</strong> CFAI Project</p>
-
-        <p><strong>Technology Stack:</strong> React.js, JavaScript, CSS</p>
-
-        <p><strong>Institution:</strong> KLH University</p>
-
+        <p>Email: support@academicflow.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Availability: 24/7</p>
       </div>
 
+      <div className="recommendation-card">
+        <h2>Business Inquiries</h2>
+
+        <p>
+          Reach out for institutional deployments, enterprise licensing,
+          and custom integrations.
+        </p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

@@ -1,47 +1,44 @@
-import { Link } from "react-router-dom"
-
 function Features() {
   return (
     <div className="page">
+      <h1>Platform Features</h1>
 
-      <h1>✨ Features</h1>
-
-      <div className="cards">
-
-        <Link to="/faculty" className="card">
-          <h3>👨‍🏫 Faculty Management</h3>
-          <p>Manage faculty information and assignments.</p>
-        </Link>
-
-        <Link to="/subjects" className="card">
-          <h3>📚 Subject Management</h3>
-          <p>Manage courses, credits and faculty mapping.</p>
-        </Link>
-
-        <Link to="/rooms" className="card">
-          <h3>🏫 Room Allocation</h3>
-          <p>Assign classrooms based on capacity.</p>
-        </Link>
-
-        <div className="card">
-          <h3>⚠️ Conflict Detection</h3>
-          <p>Detect faculty and room clashes automatically.</p>
+      <div className="stats-grid">
+        <div className="stats-card">
+          <h3>AI Scheduling</h3>
+          <p>Automated timetable generation</p>
         </div>
 
-        <div className="card">
-          <h3>📏 Capacity Validation</h3>
-          <p>Ensure classroom capacity constraints are satisfied.</p>
+        <div className="stats-card">
+          <h3>Conflict Detection</h3>
+          <p>Zero overlap scheduling</p>
         </div>
 
-        <Link to="/timetable" className="card">
-          <h3>🤖 AI Recommendations</h3>
-          <p>Generate optimized timetables and suggestions.</p>
-        </Link>
+        <div className="stats-card">
+          <h3>Faculty Allocation</h3>
+          <p>Balanced workload distribution</p>
+        </div>
 
+        <div className="stats-card">
+          <h3>Room Management</h3>
+          <p>Optimized classroom usage</p>
+        </div>
       </div>
 
+      <div className="recommendation-card">
+        <h2>Enterprise Capabilities</h2>
+
+        <ul>
+          <li>Multi-department scheduling</li>
+          <li>Resource utilization analytics</li>
+          <li>Smart room allocation</li>
+          <li>Faculty availability tracking</li>
+          <li>PDF timetable exports</li>
+          <li>Scalable architecture</li>
+        </ul>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Features
+export default Features;

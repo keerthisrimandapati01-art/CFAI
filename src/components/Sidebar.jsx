@@ -1,24 +1,59 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
 function Sidebar() {
   return (
     <div className="sidebar">
 
-      <h2>🎓 UniAI</h2>
+      <div className="logo-section">
+        <img src={logo} alt="AcademicFlow Logo" className="logo" />
 
-      <ul>
-        <li><Link to="/">🏠 Home</Link></li>
-        <li><Link to="/about">📖 About</Link></li>
-        <li><Link to="/features">✨ Features</Link></li>
-        <li><Link to="/faculty">👨‍🏫 Faculty</Link></li>
-        <li><Link to="/subjects">📚 Subjects</Link></li>
-        <li><Link to="/rooms">🏫 Rooms</Link></li>
-        <li><Link to="/timetable">📅 Timetable</Link></li>
-        <li><Link to="/contact">📞 Contact</Link></li>
-      </ul>
+        <div>
+          <h2>AcademicFlow</h2>
+          <p>Enterprise Scheduler</p>
+        </div>
+      </div>
+
+      <nav>
+        <NavLink to="/" end>
+          Dashboard Home
+        </NavLink>
+
+        <NavLink to="/dashboard">
+          Analytics
+        </NavLink>
+
+        <NavLink to="/features">
+          Features
+        </NavLink>
+
+        <NavLink to="/faculty">
+          Faculty
+        </NavLink>
+
+        <NavLink to="/subjects">
+          Subjects
+        </NavLink>
+
+        <NavLink to="/rooms">
+          Rooms
+        </NavLink>
+
+        <NavLink to="/timetable">
+          Timetable
+        </NavLink>
+
+        <NavLink to="/about">
+          About
+        </NavLink>
+
+        <NavLink to="/contact">
+          Contact
+        </NavLink>
+      </nav>
 
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;
